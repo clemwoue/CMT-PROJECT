@@ -3,11 +3,11 @@
 %              CODE TO AUTOMATIZE THE PROGRAM
 
 % Name of the C source file and the compiled program
-sourceFile = ' final_main.c';
+sourceFile = 'final_main.c';
 compiledProgram = 'finalmain.out';
 
 % Compile the C code
-[status, cmdout] = system(sprintf('gcc %s -o %s', sourceFile, compiledProgram));
+[status, cmdout] = system(sprintf('gcc %s  -o %s', sourceFile, compiledProgram));
 assert(status == 0, 'Error during C code compilation:\n%s', cmdout);
 
 
@@ -31,7 +31,7 @@ cmd = sprintf('./%s %s  ', compiledProgram, strjoin(inputs_str, ' ')); % Create 
 
 % Check if the command was executed successfully
 if status ~= 0
-    error('Error executing C program:\n%s', cmdout);
+    error('Error executing C program:\n %s', cmdout);
 end
 % Launch MATLAB visualizations
 disp('Launching MATLAB visualizations...');
