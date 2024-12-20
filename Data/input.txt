@@ -1,0 +1,10 @@
+60; percentage concrete scenario 1
+20; percentage gravel scenario 1
+20; percentage greenspace scenario 1
+35; percentage concrete scenario 2
+10; percentage gravel scenario 2
+55; percentage greenspace scenario 2
+100; lenght of the land studied [hm]
+100; width of the land studied [hm]
+30; minimum percentage of concrete for QUESTION 3
+90; maximum percentage of concrete for QUESTION 3
